@@ -9,9 +9,9 @@ public class bigsmall {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
-		System.out.print("½Ð¿é¤Ja­È");
+		System.out.print("è«‹è¼¸å…¥aå€¼");
 		float big = scn.nextFloat();
-		System.out.print("½Ð¿é¤Jb­È");
+		System.out.print("è«‹è¼¸å…¥bå€¼");
 		float small = scn.nextFloat();
 		if (big>small)
 		{System.out.println(big+">"+small);
