@@ -15,11 +15,12 @@ public class caesar {
 		char[] data = str.toCharArray();
 		int len = data.length;
 		char[] data1 = new char[len];
-		if(data1[i] - ;
-
-		}
-		String newstr = new String(data1);
-		System.out.print(newstr);
+//		if(data1[i] - ;
+//
+//		}
+//		String newstr = new String(data1);
+//		System.out.print(newstr);
 	}
+}
 
 
