@@ -14,8 +14,7 @@ public class fac03 {
 	public static int fac(String n1) {
 		
 		int sum = 0;
-		char a[]=n1.toCharArray();
-		
+		char a[]=n1.toCharArray();	
 		for(int i=0;i<a.length;i++){
 			sum = sum +1;
 	
