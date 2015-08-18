@@ -13,18 +13,26 @@ public class class01 {
 		System.out.println("雷神釜        100.85元");
 		System.out.println("破魔劍           98.25元");
 		System.out.println("");
-		System.out.println("請問你要買幾樣商品呢");
+		System.out.println("請問你要買什麼商品呢?");
+		
+	
 		int n = scn.nextInt();
 		Course cousdata[] = new Course[n];
 		for (int i = 0; i < n; i++) {
 			System.out.println("請輸入要買的商品");
-			String 武器=scn.next();
+			String 武器;
+			while(true){
+				武器=scn.next();
+				if(武器!="惡鬼槌"&&武器!="雷神釜"&&武器!="破魔劍"){
+					System.out.println("無此物品");
+				}else{
+					break;
+				}
+			}
 			System.out.println("請輸入數量");
-
-			cousdata[i] = new Course(武器,null,0,scn.nextInt());
-			System.out.println("");
-			System.out.println("");
-			System.out.println("");
+			int a=scn.nextInt();
+			cousdata[i] = new Course(武器,null,0,a);
+		
 
 		}
 
@@ -81,7 +89,7 @@ class Course {
 	public Course(String 武器,String title,int 價格 ,int 數量){
 		coustitle = title;
 		cous武器 = 武器;
-		cous價格 = 價格;
+		cous價格 = (int) sersh(武器);
 		cous數量 = 數量;
 	}
 	public void settitle(String str){
@@ -107,6 +115,13 @@ class Course {
 	}
 	public int get數量(){
 		return cous數量;
+	}
+	public float sersh(String n){
+		if(cous武器=="惡鬼槌 "){
+			return (float) 100.85;
+		}else{
+			return 10;
+		}
 	}
 	public void showinfo(){
 		System.out.println("購買的武器:"+cous武器);
