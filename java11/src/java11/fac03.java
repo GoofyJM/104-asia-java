@@ -7,14 +7,14 @@ public class fac03 {
 		
 		Scanner scn  = new Scanner(System.in);
 		
-		System.out.print("請輸入一串數字");
+		System.out.println("請輸入一串數字");
 		String n =scn.next();
 		System.out.println(fac(n));
 	}
-	public static int fac(String n1) {
+	public static int fac(String n) {
 		
 		int sum = 0;
-		char a[]=n1.toCharArray();	
+		char a[]=n.toCharArray();	
 		for(int i=0;i<a.length;i++){
 			sum = sum +1;
 	
